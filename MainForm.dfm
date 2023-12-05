@@ -33,8 +33,8 @@ object MainFrm: TMainFrm
       Width = 97
       Height = 21
       Anchors = [akTop, akRight]
-      Date = 43711.839942013890000000
-      Time = 43711.839942013890000000
+      Date = 43711.000000000000000000
+      Time = 0.839942013888503400
       TabOrder = 0
       OnChange = display_dateChange
     end
@@ -79,7 +79,7 @@ object MainFrm: TMainFrm
         BevelOuter = bvNone
         TabOrder = 0
         object Splitter1: TSplitter
-          Left = 168
+          Left = 220
           Top = 0
           Height = 534
           ExplicitLeft = 312
@@ -111,18 +111,20 @@ object MainFrm: TMainFrm
             9EBA79358E930000000049454E44AE426082}
         end
         object pnl_main: TPanel
-          Left = 171
+          Left = 223
           Top = 0
-          Width = 813
+          Width = 761
           Height = 534
           Align = alClient
           BevelKind = bkFlat
           BevelOuter = bvNone
           TabOrder = 0
+          ExplicitLeft = 171
+          ExplicitWidth = 813
           object box_main: TScrollBox
             Left = 0
             Top = 0
-            Width = 809
+            Width = 757
             Height = 530
             HorzScrollBar.Smooth = True
             Align = alClient
@@ -130,12 +132,13 @@ object MainFrm: TMainFrm
             BevelOuter = bvNone
             BorderStyle = bsNone
             TabOrder = 0
+            ExplicitWidth = 809
           end
         end
         object pnl_left: TPanel
           Left = 0
           Top = 0
-          Width = 168
+          Width = 220
           Height = 534
           Align = alLeft
           BevelKind = bkFlat
@@ -144,14 +147,16 @@ object MainFrm: TMainFrm
           object box_left: TScrollBox
             Left = 0
             Top = 0
-            Width = 164
+            Width = 216
             Height = 530
+            HorzScrollBar.Visible = False
             Align = alClient
             BevelInner = bvNone
             BevelOuter = bvNone
             BorderStyle = bsNone
             TabOrder = 0
             OnResize = box_leftResize
+            ExplicitWidth = 164
             object def_panel: TPanel
               Left = 23
               Top = 470
